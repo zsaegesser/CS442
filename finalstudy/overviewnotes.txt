@@ -1,0 +1,55 @@
+PART 1:
+  ER Diagrams
+
+  Cardinality Constraints
+    -4 types:
+      -One-to-One (1:1)
+
+  Participation Constraints & Weak Entities
+
+  ISA & Agregation *****WILL BE ON FINAL*****
+    -ISA
+      -inheritence
+      -overlap/covering
+    -aggregation
+
+  E/R Relations
+    -all cardinalities
+    -weak entity sets
+    -ISA hierarchies to relations
+    -aggregation
+
+PART2:
+  Relational Algebra
+      -selection
+      -projection
+      -cross-product
+      -set-difference
+      -union
+    compound operators
+      -joins
+      -division
+
+  Sequel
+    -COUNT(*)
+    -COUNT([DISTINCT] A)
+    -SUM([DISTINCT] A)
+
+    GROUP BY & HAVING
+    -For each keyword
+
+
+  Schema Refinement
+    -functional dependency X->Y
+
+    -3 basic Armstrongs Axioms
+    -2 advanced Union & Decomposition
+
+    -Normal Forms
+      1st, 2nd, 3rd, BCNF(3.5 NF)
+        -always start checking at 2nd, 1st is unnessesary
+    -BCNF Decomposition
+      -guarentee lossless and
+    -3NF Decomposition
+      -lossless and dependency preserving
+    

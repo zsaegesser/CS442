@@ -1,0 +1,5 @@
+username = root
+password = saegesser
+
+
+export CLASSPATH=.:./mysql-connector-java-5.1.44-bin.jar

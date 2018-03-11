@@ -1,0 +1,246 @@
+Assignment 3: JDBC Programming
+Assignment Late Policy: 10 points (out of 100) will be taken off for each day that an assignment is turned in late. In other words, 10 points will be taken off if the assignment is turned in before midnight the day after the due date, and so on. Assignments may be turned in late up to 5 days after the due date/time.
+
+The goal of this assignment is to use JDBC for database application implementation. You will create database tables, insert tuples into tables, and execute SQL queries on the tables to retrieve the data.
+
+The instructions of the software and the sample code can be found in our lab sessions.
+
+Database schema & instances
+
+You will use JDBC to implement the database for a boat rental store. The database is named BoatRental. It consists of three tables:
+
+Sailor(sid integer, sname varchar(20), rating real, age integer);
+
+Boats (bid integer, bname varchar(40), color varchar(40));
+
+Reserves(sid integer, bid integer, day date);
+
+We have the following instances of these three tables:
+
+Sailor
+
+Sid
+
+Sname
+
+Rating
+
+Age
+
+22
+
+Dustin
+
+7
+
+45
+
+29
+
+Brutus
+
+1
+
+33
+
+31
+
+Lubber
+
+8
+
+55
+
+32
+
+Andy
+
+8
+
+26
+
+58
+
+Rusty
+
+10
+
+35
+
+64
+
+Horatio
+
+7
+
+35
+
+71
+
+Zorba
+
+20
+
+18
+
+74
+
+Horatio
+
+9
+
+35
+
+
+
+
+
+
+
+
+
+Boats:
+
+Bid
+
+Bname
+
+Color
+
+101
+
+Interlake
+
+Blue
+
+102
+
+Interlake
+
+Red
+
+103
+
+Clipper
+
+Green
+
+104
+
+Marine
+
+Red
+
+Reserves:
+
+Sid
+
+Bid
+
+Day
+
+22
+
+101
+
+10/10/08
+
+22
+
+102
+
+10/10/08
+
+22
+
+103
+
+10/8/09
+
+22
+
+104
+
+10/9/09
+
+31
+
+102
+
+11/10/08
+
+31
+
+103
+
+11/6/08
+
+31
+
+104
+
+11/12/08
+
+64
+
+101
+
+9/5/08
+
+64
+
+102
+
+9/8/08
+
+74
+
+103
+
+9/8/08
+
+Your to-do list
+
+To finish this lab session, you need to:
+
+Task 1:  Create three tables.
+
+Task 2:  Insert tuples into these three tables.
+
+Task 3:  Execute SQL statements for the following queries:
+
+Q1:  Find the sids of all sailors who have reserved red boats but not green boats;
+
+Q2:  Find the names of sailors who have NOT reserved a red boat;
+
+Q3:  Find sailors whose rating is better than every sailor named Horatio;
+
+Q4:  Find the names of sailors who have reserved all boats.
+
+Q5:  For each red boat, find its number of reservations.
+
+Grade Based On:
+
+Compiles and runs without crashing (10%)
+
+Construction of 3 tables (10%)
+
+Tuple insertion of 3 tables (25%)
+
+Correct implementation of 5 queries (50%)
+
+Documentation (comments in code) (5%)
+
+Submission:
+
+Create a zip file of your assignment.
+
+Submit the zip file using Canvas (Links to an external site.)Links to an external site.
+
+Ensure your name and login name appear in each file you submit.
+
+Resources
+
+Sun's Java site is a clearinghouse for all kinds of Java-related information:  http://java.sun.com/ (Links to an external site.)Links to an external site.You can obtain the Java Software Development Kit or Java Runtime Environment here. The specification for the JDBC API is also available on this site, should you wish to read more about it.
+
+Introductory articles describing other MySQL APIs based on architecture similar to that used for JDBC may be found at http://www.kitebird.com/articles/ (Links to an external site.)Links to an external site..APIs discussed in the articles include Perl DBI, PHP PEAR::DB, Python DB-API, and Ruby DBI.
